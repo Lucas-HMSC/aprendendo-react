@@ -1,15 +1,16 @@
 import React from 'react';
-import Footer from './Footer';
-import Form from './Form';
+import Input from './Form/Input';
 
 const App = () => {
+  const [nome, setNome] = React.useState('');
+  const [email, setEmail] = React.useState('');
+
   return (
-    <React.Fragment>
-      Meu App
-      <Form />
-      <Footer />
-    </React.Fragment>
+    <form>
+      <Input id="nome" label="Nome" value={nome} setValue={setNome} required />
+      <Input id="email" label="Email" value={email} setValue={setEmail} />
+    </form>
   );
-}
+};
 
 export default App;
