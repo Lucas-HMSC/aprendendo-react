@@ -3,8 +3,8 @@ import styles from './Login.module.css';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import LoginForm from './LoginForm';
 import LoginCreate from './LoginCreate';
-import LoginPasswordLost from './LoginForm';
-import LoginPasswordReset from './LoginForm';
+import LoginPasswordLost from './LoginPasswordLost';
+import LoginPasswordReset from './LoginPasswordReset';
 import { UserContext } from '../../UserContext';
 import NotFound from '../NotFound';
 
