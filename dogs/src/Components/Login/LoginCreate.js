@@ -19,9 +19,9 @@ const LoginCreate = () => {
   async function handleSubmit(event) {
     event.preventDefault();
     const { url, options } = USER_POST({
-      username: username,
-      email: email,
-      password: password,
+      username: username.value,
+      email: email.value,
+      password: password.value,
     });
     const { response } = await request(url, options);
     if (response.ok) userLogin(username.value, password.value);
