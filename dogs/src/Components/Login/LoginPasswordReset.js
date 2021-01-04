@@ -48,12 +48,12 @@ const LoginPasswordReset = () => {
           {...password}
         />
         {loading ? (
-          <Button disabled>Resetando</Button>
+          <Button disabled>Resetando...</Button>
         ) : (
           <Button>Resetar</Button>
         )}
+      </form> 
         <Error error={error} />
-      </form>
     </section>
   );
 };
