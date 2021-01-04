@@ -15,7 +15,7 @@ import NotFound from './Components/NotFound';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename="/dogs-react" >
         <UserStorage>
           <Header />
           <main className="AppBody">
